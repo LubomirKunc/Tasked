@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8" />
+
+        <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1"/>
+
+        <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/solar/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+        <title> view tasks </title>
+
+    </head>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+
+
+        <a class="navbar-brand main-heading" href="/">
+
+            &nbsp; Tasked
+
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+
+
+            <ul class="navbar-nav ms-auto">
+
+                &nbsp; &nbsp; &nbsp;
+
+                <li class="nav-item">
+
+                    <a class="btn navbar-btn" type="button" href="/"> Back to menu </a>
+
+                </li>
+
+                &nbsp; &nbsp; &nbsp;
+
+                <li class="nav-item">
+
+                    <a class="btn btn-primary navbar-btn" type="button" href="/Registration/"> Registrate </a>
+
+                </li>
+
+                &nbsp; &nbsp; &nbsp;
+
+            </ul>
+
+
+        </div>
+
+
+    </nav>
+    <body>
+        <div>
+          <div class="text-center bg-white shadow-md p-5 form-Layout"
+            style="margin-top:20px; margin-left:380px; margin-right:380px; margin-bottom:20px; border-radius:5px 60px;">
+            <b> <strong> <h1> Login here </h1> </strong> </b>
+            <hr>
+            <br> <br>
+            <form action="/Login/" method="post">
+
+                {% csrf_token %}
+
+                <label for"">Username</label>
+                <input class="" type="text" id="username" name="username" placeholder="Enter your username" Required>
+                <br>
+
+               <label for"">Password</label>
+                <input class="" type="password" id="pass1" name="pass1" placeholder="Enter your password" Required>
+                <br><br>
+
+                <button type="submit" class="btn btn-primary"> Login </button>
+            </form>
+          </div>
+        </div>
+        <div class="text-center">
+
+
+    </body>
+    <footer>
+
+        <p><a href="https://www.termsfeed.com/live/2d2c7f58-7f9b-4d05-b70d-c5c2c4912b4e">Privacy Policy</a>  </p>
+        <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+
+    crossorigin="anonymous">
+
+    </script>
+</html>
